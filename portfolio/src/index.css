@@ -54,6 +54,9 @@ header {
   position: sticky;
   top: 0;
 }
+.header {
+  font-weight: 800;
+}
 @media (max-width: 413px) {
   nav {
     padding-left: var(--small-spacing);
