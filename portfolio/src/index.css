@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --color-bg: #faf9fc;
+  --color-text: #4f5d75;
+  /* Font */
+  --font-style: "Space Grotesk", sans-serif;
+
+  /* Spacing */
+  --line-spacing: 1.6;
+  --small-spacing: 0.5rem;
+  --medium-spacing: 1rem;
+  --large-spacing: 2rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-bg);
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-style);
+  line-height: var(--line-spacing);
+}
