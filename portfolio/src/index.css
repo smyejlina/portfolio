@@ -29,6 +29,7 @@ body {
 .nav-list {
   display: flex;
   justify-content: flex-end;
+  padding-left: 0;
   gap: var(--large-spacing);
   list-style-type: none;
 }
@@ -52,4 +53,13 @@ header {
   border-bottom: var(--divide-line-size) solid var(--color-acc-bg-decor);
   position: sticky;
   top: 0;
+}
+@media (max-width: 413px) {
+  nav {
+    padding-left: var(--small-spacing);
+    padding-right: var(--small-spacing);
+  }
+  .nav-list {
+    gap: var(--medium-spacing);
+  }
 }
