@@ -4,7 +4,7 @@ function App() {
   return (
     <header>
       <nav>
-        <ul>
+        <ul className="nav-list">
           <li>
             <a href="#aboutMe">About me</a>
           </li>
@@ -12,7 +12,9 @@ function App() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contactMe">Contact me</a>
+            <a href="#contactMe" className="btn">
+              Contact me
+            </a>
           </li>
         </ul>
       </nav>

@@ -2,6 +2,8 @@
   /* Colors */
   --color-bg: #faf9fc;
   --color-text: #4f5d75;
+  --color-btn-links: #7261a3;
+  --color-acc-bg-decor: #ceabb1;
   /* Font */
   --font-style: "Space Grotesk", sans-serif;
 
@@ -10,6 +12,9 @@
   --small-spacing: 0.5rem;
   --medium-spacing: 1rem;
   --large-spacing: 2rem;
+
+  /* Size  */
+  --divide-line-size: 0.1rem;
 }
 * {
   box-sizing: border-box;
@@ -20,4 +25,31 @@ body {
   color: var(--color-text);
   font-family: var(--font-style);
   line-height: var(--line-spacing);
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--large-spacing);
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  background-color: var(--color-btn-links);
+  color: #faf9fc;
+  text-decoration: none;
+  padding: var(--small-spacing);
+  border-radius: 0.5rem;
+}
+nav {
+  padding-left: var(--large-spacing);
+  padding-right: var(--large-spacing);
+}
+header {
+  background-color: var(--color-bg);
+  border-bottom: var(--divide-line-size) solid var(--color-acc-bg-decor);
+  position: sticky;
+  top: 0;
 }
