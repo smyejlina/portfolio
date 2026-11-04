@@ -1,7 +1,7 @@
 function Introduction() {
   return (
     <div className="container">
-      <div className="left intro-text">
+      <div className="left-text intro-text">
         <h2 className="header">
           print("Hello World!")<span className="bar">|</span>
         </h2>
@@ -13,7 +13,7 @@ function Introduction() {
           </a>
         </p>
       </div>
-      <div className="right img-container">
+      <div className="right-img img-container">
         <img
           src="src/assets/coding_rabbit.png"
           alt="Image of rabbit coding"
