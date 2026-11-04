@@ -1,29 +1,37 @@
-function ProjectCard(
+function ProjectCard({
   title,
   type,
   beginningDate,
-  skills,
+  skills = [],
   description,
   endDate = "Present",
-) {
-  <div>
+}) {
+  return (
     <div>
-      <img src="" alt="" />
+      <div>
+        <img src="" alt="" />
+      </div>
+
+      <div>
+        <span>{type}</span>
+        <h3>{title}</h3>
+
+        <p>
+          {beginningDate} - {endDate}
+        </p>
+
+        <p>{description}</p>
+
+        {skills.map((skill) => (
+          <span key={skill}>{skill}</span>
+        ))}
+
+        <a href="#contactMe" className="btn">
+          Learn More
+        </a>
+      </div>
     </div>
-    <div>
-      <span>{type}</span>
-      <h3>{title}</h3>
-      <p>
-        {beginningDate} - {endDate}
-      </p>
-      <p>{description}</p>
-      {skills.map((skill) => {
-        <span>{skill}</span>;
-      })}
-      <a href="#contactMe" className="btn">
-        Learn More
-      </a>
-    </div>
-  </div>;
+  );
 }
+
 export default ProjectCard;
