@@ -2,7 +2,7 @@ function Header() {
   return (
     <header>
       <nav>
-        <ul className="nav-list">
+        <ul className="list">
           <li>
             <a href="#aboutMe">About me</a>
           </li>
