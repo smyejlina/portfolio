@@ -1,4 +1,6 @@
 function ProjectCard({
+  src,
+  alt,
   title,
   type,
   beginningDate,
@@ -7,13 +9,13 @@ function ProjectCard({
   endDate = "Present",
 }) {
   return (
-    <div>
-      <div>
-        <img src="" alt="" />
+    <div className="project-card">
+      <div className="img-container-project">
+        <img src={src} alt={alt} className="projects-img" />
       </div>
 
-      <div>
-        <span>{type}</span>
+      <div className="project-card-content">
+        <span className="tag">{type}</span>
         <h3>{title}</h3>
 
         <p>
@@ -21,10 +23,13 @@ function ProjectCard({
         </p>
 
         <p>{description}</p>
-
-        {skills.map((skill) => (
-          <span key={skill}>{skill}</span>
-        ))}
+        <ul className="list tag-list">
+          {skills.map((skill) => (
+            <li className="tag" key={skill}>
+              {skill}
+            </li>
+          ))}
+        </ul>
 
         <a href="#contactMe" className="btn">
           Learn More
