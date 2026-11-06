@@ -9,7 +9,7 @@ function Introduction() {
         <p>
           Curious about me?{" "}
           <a href="#aboutMe" className="link">
-            Hop on ⮕
+            Hop on ➜
           </a>
         </p>
       </div>
